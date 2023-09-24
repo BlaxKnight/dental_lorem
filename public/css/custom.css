@@ -1,0 +1,11 @@
+section, footer {
+  padding: 60px 0 !important;
+} 
+
+.text-justify {
+  text-align: justify;
+}
+
+.list-group-flush > .list-group-item {
+  border: none;
+}

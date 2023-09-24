@@ -1,0 +1,40 @@
+// Include any default variable overrides here
+
+$btn-font-size: 1.1rem;
+// $card-height: 100%;
+
+$primary: #eb6e4b;
+$secondary: #48484a;
+
+// Import the function and variables
+@import "./bootstrap/scss/_functions";
+@import "./node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+  "smokey": whitesmoke,
+  "primary-light": #fff4f0,
+  "footer-dark": #425073,
+  "footer-text": #568998
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+@font-face {
+  font-family: "Vazirmatn";
+  src:
+    local("Vazirmatn"),
+    url("./assets/fonts/Vazirmatn[wght].woff2") format("woff2");
+}
+
+:root {
+  --bs-body-font-family: "Vazirmatn";
+  // --bs-nav-link-font-size: 1.2rem;
+}
+
+.card-img-top {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
