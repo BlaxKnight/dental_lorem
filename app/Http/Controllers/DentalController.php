@@ -9,6 +9,9 @@ class DentalController extends Controller
     function index(){
         return view("pages.index");
     }
+    function articles(){
+        return view('pages.articles');
+    }
     function login(){
         return view('pages.login');
     }

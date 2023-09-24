@@ -17,6 +17,7 @@ use Symfony\Component\HttpKernel\Event\ResponseEvent;
 
 Route::get('/', [App\Http\Controllers\DentalController::class, "index"]);
 Route::get('/index', [App\Http\Controllers\DentalController::class, "index"]);
+Route::get('/login', [App\Http\Controllers\DentalController::class, "articles"]);
 Route::get('/login', [App\Http\Controllers\DentalController::class, "login"]);
 Route::get('/dashboard', [App\Http\Controllers\DentalController::class, "dashboard"]);
 Route::get('/about', [App\Http\Controllers\DentalController::class, "about"]);
