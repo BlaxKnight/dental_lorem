@@ -1043,3 +1043,11 @@
 #33 /opt/lampp/htdocs/dental/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
 #34 {main}
 "} 
+[2023-09-25 05:35:51] local.ERROR: syntax error, unexpected token "*", expecting "function" or "const" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"*\", expecting \"function\" or \"const\" at /opt/lampp/htdocs/dental/app/Models/User.php:44)
+[stacktrace]
+#0 {main}
+"} 
+[2023-09-25 05:35:53] local.ERROR: syntax error, unexpected token "*", expecting "function" or "const" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"*\", expecting \"function\" or \"const\" at /opt/lampp/htdocs/dental/app/Models/User.php:44)
+[stacktrace]
+#0 {main}
+"} 
