@@ -9,3 +9,7 @@ section, footer {
 .list-group-flush > .list-group-item {
   border: none;
 }
+
+.input-group {
+  flex-wrap: nowrap !important;
+}
