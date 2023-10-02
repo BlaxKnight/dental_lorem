@@ -6,6 +6,9 @@
   <!-- bootstrap scripts -->
   <script src="{{ url('js/bootstrap.bundle.min.js') }}" defer></script>
 
+  <!-- custom js -->
+  <script src="{{ url('js/custom.js') }}" defer></script>
+
   <!-- custom css -->
   <link rel="stylesheet" href="{{ url('css/custom.css') }}">
 

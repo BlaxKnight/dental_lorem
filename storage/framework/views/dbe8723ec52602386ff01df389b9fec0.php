@@ -6,6 +6,9 @@
   <!-- bootstrap scripts -->
   <script src="<?php echo e(url('js/bootstrap.bundle.min.js')); ?>" defer></script>
 
+  <!-- custom js -->
+  <script src="<?php echo e(url('js/custom.js')); ?>" defer></script>
+
   <!-- custom css -->
   <link rel="stylesheet" href="<?php echo e(url('css/custom.css')); ?>">
 
