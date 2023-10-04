@@ -11,6 +11,23 @@
 
   <!-- container -->
   <div class="container d-flex vh-100">
+    <div class="mt-5">
+      <?php if($errors->any()): ?>
+       <div class="col-12">
+        <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+          <div class="alert alert-danger"><?php echo e($errors); ?></div>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+       </div>
+      <?php endif; ?>
+
+      <?php if(session()->has('error')): ?>
+       <div class="alert alert-danger"><?php echo e(session('error')); ?></div>
+      <?php endif; ?>
+
+      <?php if(session()->has('success')): ?>
+       <div class="alert alert-danger"><?php echo e(session('success')); ?></div>
+      <?php endif; ?>
+    </div>
     <!-- login box -->
     <div class="bg-white w-100 shadow m-auto rounded-4" style="max-width: 600px;">
       <div class="row row-cols-1 container m-0">
@@ -20,13 +37,14 @@
         </div>
         <div class="col">
           <!-- form -->
-          <form>
+          <form action="<?php echo e(route('login.post')); ?>" method="POST">
+            <?php echo csrf_field(); ?>
             <!-- username -->
             <div class="row mb-3">
               <label for="username" class="col-sm-3 col-md-2 col-form-label text-muted">نام کاربری</label>
               <div class="col-sm-9 col-md-10">
                 <div class="input-group">
-                  <input type="text" dir="ltr" class="form-control" id="username">
+                  <input type="text" dir="ltr" class="form-control" id="username" name="username">
                   <button type="button" class="btn btn-primary input-group-text user-select-none pe-none">
                     <h3 class="m-0">
                       <i class="bi bi-person" id="user-icon"></i>
@@ -40,7 +58,7 @@
               <label for="password" class="col-sm-3 col-md-2 col-form-label text-muted">رمز عبور</label>
               <div class="col-sm-9 col-md-10">
                 <div class="input-group">
-                  <input type="password" dir="ltr" class="form-control" id="password">
+                  <input type="password" dir="ltr" class="form-control" id="password" name="password">
                   <button type="button" class="btn btn-primary input-group-text" onclick="showPassword()">
                     <h3 class="m-0">
                       <i class="bi bi-eye-slash" id="password-icon"></i>
@@ -53,6 +71,7 @@
             <div class="row mb-3">
               <div class="col">
                 <input class="btn btn-primary w-100" type="submit" value="ورود">
+                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
               </div>
             </div>
           </form>

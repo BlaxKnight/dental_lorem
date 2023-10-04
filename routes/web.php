@@ -16,9 +16,11 @@ use Symfony\Component\HttpKernel\Event\ResponseEvent;
 |
 */
 
-Route::get('/', [App\Http\Controllers\DentalController::class, "index"]);
-Route::get('/index', [App\Http\Controllers\DentalController::class, "index"]);
-Route::get('/login', [App\Http\Controllers\DentalController::class, "articles"]);
-Route::get('/login', [App\Http\Controllers\DentalController::class, "login"]);
-Route::get('/dashboard', [App\Http\Controllers\DentalController::class, "dashboard"]);
-Route::get('/about', [App\Http\Controllers\DentalController::class, "about"]);
+Route::get('/', [App\Http\Controllers\DentalController::class, "index"])->name("index");
+Route::get('/index', [App\Http\Controllers\DentalController::class, "index"])->name("index");
+Route::get('/login', [App\Http\Controllers\DentalController::class, "articles"])->name("articles");
+Route::get('/login', [App\Http\Controllers\DentalController::class, "login"])->name("login");
+Route::post('/login', [App\Http\Controllers\DentalController::class, "loginPost"])->name("login.post");
+Route::get('/logout', [App\Http\Controllers\DentalController::class, "logout"])->name("logout");
+Route::get('/dashboard', [App\Http\Controllers\DentalController::class, "dashboard"])->name("dashboard");
+Route::get('/about', [App\Http\Controllers\DentalController::class, "about"])->name("about");

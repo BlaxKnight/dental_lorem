@@ -34,7 +34,7 @@
   </div>
 </nav>
 
-<nav class="navbar navbar-expand-lg p-3 border-bottom shadow-sm bg-primary py-0 sticky-top">
+<nav class="navbar navbar-expand-lg p-3 border-bottom shadow bg-primary py-0 sticky-top">
   <div class="container-sm">
     <!-- sidebar toggle for smaller devices -->
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
         <ul class="navbar-nav">
           <div class="dropdown me-3">
             <a class="dropdown-toggle text-decoration-none nav-link" type="button" id="book-dropdown" data-bs-toggle="dropdown"><i class="lead bi bi-clipboard-plus-fill pe-2"></i><span class="me-1"> خدمات دندان‌پزشکی</span></a>
-            <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <ul class="dropdown-menu shadow-lg" aria-labelledby="book-dropdown">
               <li><a href="#" class="dropdown-item py-2 px-auto">تست تست تست تست</a></li>
               <li><a href="#" class="dropdown-item py-2 px-auto">تست تست تست تست</a></li>
               <li><a href="#" class="dropdown-item py-2 px-auto">تست تست تست تست</a></li>
