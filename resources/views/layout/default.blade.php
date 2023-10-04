@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html dir="rtl" @lang('fa')>
  <head>
+  <!--<meta http-equiv="refresh" content="5">-->
   @include('includes.head')
   {{--@include('includes.css')--}}
  </head>

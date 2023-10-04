@@ -7,11 +7,9 @@
 
 @section('content')
 
-<main>
-  <!-- background -->
+{{-- <main>
   <img class="object-fit-cover vw-100 vh-100 fixed-top" style="z-index: -1;" src="{{url('assets/images/bg.svg')}}">
-  
-  <!-- container -->
+
   <div class="container-fluid p-0">
     <div class="row">
       <div class="col">
@@ -41,7 +39,7 @@
     </div>
   </div>
 
-</main>
+</main> --}}
 
 @endsection
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html dir="rtl" <?php echo app('translator')->get('fa'); ?>>
  <head>
+  <!--<meta http-equiv="refresh" content="5">-->
   <?php echo $__env->make('includes.head', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
   
  </head>
