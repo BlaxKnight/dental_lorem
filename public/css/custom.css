@@ -14,3 +14,8 @@ section, footer {
   flex-wrap: nowrap !important;
 }
 
+@media only screen and (min-width: 768px) {
+  #tab-content {
+    padding-left: 225px;
+  }
+}
