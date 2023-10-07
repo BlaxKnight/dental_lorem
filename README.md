@@ -27,7 +27,7 @@
 
 <p align="center">
    <a href="#">
-      <image src="#" alt="dental" />
+      <image src="#" alt="Dental" />
    </a>
    <image src="#" alt="Github Downloads" />
    <a href="#">
@@ -38,7 +38,7 @@
    </a>
 </p>
 
-![App Preview](#)
+![App Preview](.github/preview.png)
 
 ## :sparkles: Features
 
