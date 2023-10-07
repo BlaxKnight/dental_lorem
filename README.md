@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img src="#" alt="logo" width="56" height="56">
+    <img src=".github/logo.png" alt="logo" width="56" height="56">
   </a>
 </p>
 
