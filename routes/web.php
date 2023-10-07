@@ -21,7 +21,6 @@ Route::get('/', [App\Http\Controllers\DentalController::class, "index"])->name("
 Route::get('/index', [App\Http\Controllers\DentalController::class, "index"])->name("index");
 Route::get('/articles', [App\Http\Controllers\DentalController::class, "articles"])->name("articles");
 Route::controller(LoginRegisterController::class)->group(function() {
-  //Route::get('/register', 'register')->name('register');
   Route::post('/store', 'store')->name('store');
   Route::get('/login', 'login')->name('login');
   Route::post('/authenticate', 'authenticate')->name('authenticate');
